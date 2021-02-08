@@ -13,7 +13,7 @@ client.on('message', async (message) => {
     const kanal = await message.guild.channels.create(`bilet-${message.author.username}`)//bilet-kullanıadı şeklinde bir kanal oluşturur
 
     kanal.updateOverwrite(message.guild.id, {'SEND_MESSAGES': false, 'VIEW_CHANNEL': false});// Everyone Rolü için mesaj göndermeyi ve kanalı görmeyi kapatır.
-    kanal.updateOverwrite(yetkili, {'SEND_MESSAGES': true, 'VIEW_CHANNEL': true});// Everyone Rolü için mesaj göndermeyi ve kanalı görmeyi kapatır.
+    kanal.updateOverwrite(yetkili, {'SEND_MESSAGES': true, 'VIEW_CHANNEL': true});// Ayar dosyasındaki yetkili için mesaj göndermeyi ve kanalı görmeyi kapatır.
     kanal.updateOverwrite(message.author, {'SEND_MESSAGES': true, 'VIEW_CHANNEL': true});//Mesaj göndermeyi ve kanalı görmeyi kullanıcı için açık yapar.
   
     const biletMesajı = new Discord.MessageEmbed()

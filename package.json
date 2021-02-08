@@ -1,0 +1,15 @@
+{
+  "name": "Bilet-Bot",
+  "version": "1.0.0",
+  "description": "Discord destek bilet bot'u",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Hata: test belirtilmedi\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Doxria",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.1"
+  }
+}
